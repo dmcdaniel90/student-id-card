@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ID Card Generator</title>
+    <link rel="shortcut icon" href="https://www.google.com/s2/favicons?domain=https://www.gla.ac.uk/&sz=128" type="image/x-icon"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script type="module" crossorigin src="/assets/index-iKX1gxEs.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-_EaXHA0c.css">
+  </head>
+  <body>
+    <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+      <div class="text-light w-100 h3 text-center">ID Card Generator</div>
+    </header>
+
+    <div class="container d-flex">
+      <div class="section-container col-6 p-4">
+        <div class="text-center font-weight-bold">
+          <h3>Input form</h3>
+        </div>
+        <form action="" onsubmit="return false">
+          <div class="form-element py-3">
+            <label for="" class="form-label">Enter Name:</label>
+            <input type="text" id="name">
+          </div>
+          <div class="form-element py-3">
+            <label for="" class="form-label">Enter School</label>
+            <input type="text" id="collegeName">
+          </div>
+          <div class="form-element py-3">
+            <label for="" class="form-label">Enter Location</label>
+            <input type="text" id="location">
+          </div>
+          <div class="form-element image-input py-3">
+            <label for="" class="form-label">Choose a profile picture</label>
+            <input type="file" id="profileImage" accept="image/jpeg, image/png, image/jpg">
+          </div>
+          
+          <button type="button" class="btn generateButton" id="submitButton">Generate Card</button>
+        </form>
+      </div>
+
+      <div class="section-container col-6">
+        <div class="id-card-container" id="collegeCard">
+          <div class="text-center">
+            <h3>Generated Card</h3>
+          </div>
+          <div class="card-container">
+            <div class="card-wrapper">
+              <div class="user-card">
+                <span id="userPhoto">
+                  
+                </span>
+              </div>
+              <div class="general-information">
+                <div class="card-element card-name">
+                  <span>Name:</span>
+                  <span id="cardName"></span>
+                </div>
+                <div class="card-element college-name">
+                  <span>College Name:</span>
+                  <span id="cardCollegeName"></span>
+                </div>
+                <div class="card-element college-name">
+                  <span>Location:</span>
+                  <span id="cardLocation"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/1ce2b570da.js" crossorigin="anonymous"></script>
+  </body>
+</html>
